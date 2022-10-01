@@ -4,7 +4,9 @@ const {graphqlHTTP} = require('express-graphql')
 require('dotenv/config')
 const mongoose = require('mongoose')
 const schema = require('./schema/schema')
-// mongodb+srv://Bilen:<password>@cluster0.fpzt2c9.mongodb.net/?retryWrites=true&w=majority
+
+
+
 app.use('/graphql', graphqlHTTP({
     schema,
     graphiql:true
